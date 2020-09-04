@@ -67,7 +67,8 @@ void PrintCSV(map<string, vector<string>> dataSet)
 		{
 			if (i == columnSize)
 			{
-				cout << column[i] << endl; break;
+				cout << column[i] << endl;
+				break;
 			}
 			cout << column[i] << ",";
 		}
