@@ -138,7 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CSV.cpp" />
+    <ClCompile Include="CSV.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CSVUtility.cpp" />
+    <ClCompile Include="UtilityTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSVUtility.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
