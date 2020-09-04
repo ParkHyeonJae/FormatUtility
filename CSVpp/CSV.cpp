@@ -15,7 +15,6 @@ int main(int argv, char* argc)
 	vector<string> tupleCSVData;
 	vector<string> spiltCSVData;
 	
-	//ifstream readFromFile("words.txt");
 	ifstream readFromFile("DataTable.csv");
 
 	if (readFromFile.is_open()) {
