@@ -65,12 +65,12 @@ void PrintCSV(map<string, vector<string>> dataSet)
 		size_t columnSize = column.size();
 		for (size_t i = 0; i < columnSize; i++)
 		{
-			if (i == columnSize)
+			if (i != columnSize)
 			{
-				cout << column[i] << endl;
+				cout << column[i] << ",";
 				break;
 			}
-			cout << column[i] << ",";
+			cout << column[i] << endl;
 		}
 		cout << endl;
 	}
