@@ -18,7 +18,6 @@ int main(int argv, char* argc)
 	//ifstream readFromFile("words.txt");
 	ifstream readFromFile("DataTable.csv");
 
-	int csvSequence = 0;
 	if (readFromFile.is_open()) {
 		while (!readFromFile.eof()) {
 			string str;
