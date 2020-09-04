@@ -11,7 +11,7 @@ CSVUtility::~CSVUtility()
 
 
 
-bool CSVUtility::ReadCSVFile(const string filename, vector<string>& tupleCSVData, vector<string>& spiltCSVData)
+bool CSVUtility::ReadCSVFile(const string& filename, vector<string>& tupleCSVData, vector<string>& spiltCSVData)
 {
 	if (filename.find(".csv") == string::npos)
 		return false;
@@ -79,7 +79,7 @@ void CSVUtility::PrintCSV(const map<string, vector<string>>const* dataSet)
 		cout << endl;
 	}
 }
-bool CSVUtility::LoadCSV(const string _filename)
+bool CSVUtility::LoadCSV(const string& _filename)
 {
 	if (ReadCSVFile(_filename, tupleCSVData, spiltCSVData)) {
 		dataSet = ConvertCSVMap(tupleCSVData, spiltCSVData);

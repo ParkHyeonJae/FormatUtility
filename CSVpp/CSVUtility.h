@@ -10,8 +10,8 @@ private:
 public:
 	CSVUtility();
 	~CSVUtility();
-	bool LoadCSV(const string _filename);
-	bool ReadCSVFile(const string filename, vector<string>&, vector<string>&);
+	bool LoadCSV(const string& _filename);
+	bool ReadCSVFile(const string& filename, vector<string>&, vector<string>&);
 	map<string, vector<string>> ConvertCSVMap(const vector<string> & const, const vector<string>& const);
 	void PrintCSV(const map<string, vector<string>>const* dataSet);
 
