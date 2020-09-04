@@ -1,10 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <vector>
-#include <map>
-using namespace std;
+#include "stdafx.h"
 
 size_t ConvertColumnCount(size_t, size_t);
 
